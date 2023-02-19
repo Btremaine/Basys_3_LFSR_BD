@@ -1,0 +1,33 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Color Coded_ScaleFactor":"0.738553",
+   "Color Coded_TopLeft":"-95,-218",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-273,375",
+   "ExpandedHierarchyInLayout":"",
+   "commentid":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_clk_5MHz -pg 1 -lvl 0 -x 0 -y 590 -defaultsOSRD
+preplace port port-id_rst_n -pg 1 -lvl 0 -x 0 -y 610 -defaultsOSRD
+preplace port port-id_update -pg 1 -lvl 3 -x 580 -y 710 -defaultsOSRD
+preplace portBus anode -pg 1 -lvl 3 -x 580 -y 580 -defaultsOSRD
+preplace portBus cath_out -pg 1 -lvl 3 -x 580 -y 560 -defaultsOSRD
+preplace inst div_by_N_0 -pg 1 -lvl 1 -x 140 -y 580 -defaultsOSRD
+preplace inst div_by_N_1 -pg 1 -lvl 2 -x 420 -y 710 -defaultsOSRD
+preplace inst lfsr_0 -pg 1 -lvl 1 -x 140 -y 730 -defaultsOSRD
+preplace inst Seven_Seg_Display_Co_0 -pg 1 -lvl 2 -x 420 -y 570 -defaultsOSRD
+preplace netloc Seven_Seg_Display_Co_0_anode 1 2 1 NJ 580
+preplace netloc Seven_Seg_Display_Co_0_cath_out 1 2 1 NJ 560
+preplace netloc clk_wiz_0_clk_out1 1 0 2 20 650 260
+preplace netloc div_by_N_0_Q_out 1 1 1 N 580
+preplace netloc div_by_N_1_Q_out 1 0 3 20 810 NJ 810 550
+preplace netloc lfsr_0_word 1 1 1 270 600n
+preplace netloc reset_gen_0_rst_n 1 0 2 30 510 250
+levelinfo -pg 1 0 140 420 580
+pagesize -pg 1 -db -bbox -sgen -120 -20 720 820
+"
+}
+{
+   "da_clkrst_cnt":"3"
+}

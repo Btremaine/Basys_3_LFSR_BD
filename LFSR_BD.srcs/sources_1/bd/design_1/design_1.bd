@@ -1,0 +1,313 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x16DBD93A6C73C5E2",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../LFSR_BD.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "div_by_N_0": "",
+      "div_by_N_1": "",
+      "lfsr_0": "",
+      "Seven_Seg_Display_Co_0": ""
+    },
+    "ports": {
+      "anode": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "cath_out": {
+        "direction": "O",
+        "left": "6",
+        "right": "0"
+      },
+      "clk_5MHz": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_5MHz",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst_n": {
+        "direction": "I"
+      },
+      "update": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "div_by_N_0": {
+        "vlnv": "xilinx.com:module_ref:div_by_N:1.0",
+        "xci_name": "design_1_div_by_N_0_0",
+        "xci_path": "ip\\design_1_div_by_N_0_0\\design_1_div_by_N_0_0.xci",
+        "inst_hier_path": "div_by_N_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "div_by_N",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "clk_in": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_5MHz",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Q_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "div_by_N_1": {
+        "vlnv": "xilinx.com:module_ref:div_by_N:1.0",
+        "xci_name": "design_1_div_by_N_1_0",
+        "xci_path": "ip\\design_1_div_by_N_1_0_1\\design_1_div_by_N_1_0.xci",
+        "inst_hier_path": "div_by_N_1",
+        "parameters": {
+          "N": {
+            "value": "5000000"
+          },
+          "Nb": {
+            "value": "23"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "div_by_N",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "clk_in": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_5MHz",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "Q_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "lfsr_0": {
+        "vlnv": "xilinx.com:module_ref:lfsr:1.0",
+        "xci_name": "design_1_lfsr_0_0",
+        "xci_path": "ip\\design_1_lfsr_0_0_1\\design_1_lfsr_0_0.xci",
+        "inst_hier_path": "lfsr_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "lfsr",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_5MHz",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "pulse": {
+            "direction": "I"
+          },
+          "word": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "Seven_Seg_Display_Co_0": {
+        "vlnv": "xilinx.com:module_ref:Seven_Seg_Display_Control:1.0",
+        "xci_name": "design_1_Seven_Seg_Display_Co_0_0",
+        "xci_path": "ip\\design_1_Seven_Seg_Display_Co_0_0_1\\design_1_Seven_Seg_Display_Co_0_0.xci",
+        "inst_hier_path": "Seven_Seg_Display_Co_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Seven_Seg_Display_Control",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk1": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk_5MHz",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "refresh": {
+            "direction": "I"
+          },
+          "word": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "cath_out": {
+            "direction": "O",
+            "left": "6",
+            "right": "0"
+          },
+          "anode": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Seven_Seg_Display_Co_0_anode": {
+        "ports": [
+          "Seven_Seg_Display_Co_0/anode",
+          "anode"
+        ]
+      },
+      "Seven_Seg_Display_Co_0_cath_out": {
+        "ports": [
+          "Seven_Seg_Display_Co_0/cath_out",
+          "cath_out"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_5MHz",
+          "div_by_N_0/clk_in",
+          "div_by_N_1/clk_in",
+          "lfsr_0/clk",
+          "Seven_Seg_Display_Co_0/clk1"
+        ]
+      },
+      "div_by_N_0_Q_out": {
+        "ports": [
+          "div_by_N_0/Q_out",
+          "Seven_Seg_Display_Co_0/refresh"
+        ]
+      },
+      "div_by_N_1_Q_out": {
+        "ports": [
+          "div_by_N_1/Q_out",
+          "lfsr_0/pulse",
+          "update"
+        ]
+      },
+      "lfsr_0_word": {
+        "ports": [
+          "lfsr_0/word",
+          "Seven_Seg_Display_Co_0/word"
+        ]
+      },
+      "reset_gen_0_rst_n": {
+        "ports": [
+          "rst_n",
+          "div_by_N_1/rst_n",
+          "lfsr_0/rst_n",
+          "div_by_N_0/rst_n",
+          "Seven_Seg_Display_Co_0/rst_n"
+        ]
+      }
+    }
+  }
+}
