@@ -26,13 +26,6 @@ ipch/
 *.sdf
 *.cachefile
 
-# Vivado projects
-####################\
-*.behav
-*.rpt
-*.rst
-
-
 # Logs and Databases #
 ######################
 *.log
@@ -52,6 +45,9 @@ ipch/
 
 # Xilinx stuff #
 ################
+*.behav
+*.rpt
+*.rst
 *.xwbt
 *.xml
 *.drc
